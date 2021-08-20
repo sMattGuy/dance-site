@@ -1,17 +1,31 @@
 <!doctype html>
 	<head>
 		<title>Dance Conversion</title>
+		<style>
+			.box{
+				border-radius: 10px;
+				border: 2px solid #000000;
+				background-color: #FFFFFF;
+				width: 90%;
+				max-width: 535px;
+				margin: auto;
+				line-height: 150%;
+				font-family: sans-serif;
+			}
+		</style>
 	</head>
 
 	<body>
-		<h1>Convert to Dance!</h1>
-		<p>Just type it in!</p>
-		<form action="convert" method="post">
-			<fieldset>
-				<label for="words">Sentence:</label>
-				<input id="words" name="words" type="text" />
+		<div class="box">
+			<center>
+			<h1>Convert to Dance!</h1>
+			<p>Just type it in!</p>
+			<form action="convert" method="post">
+				<textarea name="words" id="words" rows="4" style="width:90%"></textarea>
+				<br>
 				<input type="submit" value="Convert" />
-			</fieldset>
-		</form>
+			</form>
+			</center>
+		</div>
 	</body>
 </html>
